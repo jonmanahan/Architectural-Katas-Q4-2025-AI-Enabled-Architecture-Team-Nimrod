@@ -1,0 +1,1 @@
+# Architectural-Katas-Q4-2025-AI-Enabled-Architecture-Team-Nimrod
