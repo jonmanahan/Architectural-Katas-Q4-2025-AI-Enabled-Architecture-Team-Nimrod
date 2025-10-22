@@ -22,17 +22,26 @@ MobilityCorp faces three interconnected challenges that directly impact revenue,
 
 ![Reservation Service Container Diagram (C2)](/images/c2-res.png "Reservation Service Container Diagram (C2)")
 
+### Travel Agent Component Diagram (C3)
+
+![Travel Agent Component Diagram (C3)](/images/c3-travel-agent.png "Travel Agent Component Diagram (C3))")
+
 ### Operations Service Container Diagram (C2)
 
 ![Operations Service Container Diagram (C2)](/images/c2-ops.png "Operations Service Container Diagram (C2)")
+
+
+### Dispatch Agent Component Diagram (C3)
+
+![Dispatch Agent Component Diagram (C3)](/images/c3-dispatch-agent.png "Dispatch Agent Component Diagram (C3))")
 
 ### Data Intelligence Platform Container Diagram (C2)
 
 ![Data Intelligence Platform Container Diagram (C2)](/images/c2-data.png "Data Intelligence Platform Container Diagram (C2)")
 
-### Experimentation Platform Component Diagram (C2)
+### Experimentation Platform Component Diagram (C3)
 
-![Experimentation Platform Component Diagram (C2)](/images/c3-exp.png "Experimentation Platform Component Diagram (C2)")
+![Experimentation Platform Component Diagram (C3)](/images/c3-exp.png "Experimentation Platform Component Diagram (C3)")
 
 
 ## Architecture Decision Records (ADRs)
