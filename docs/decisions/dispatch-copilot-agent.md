@@ -15,7 +15,7 @@ MobilityCorp has an opportunity to improve it's operational efficiency by addres
 1. Anticipating customer demand to position the right vehicles in the right locations at the right times
 2. Intelligently prioritizing battery swaps based on charge levels and demand patterns
 
-To support these objectives, the company requires an operations platform that enables field operators to make real-time dispatch decisions based on dynamic conditions (weather, traffic, demand fluctuations). We need to determine a workflow that will enable real-time, explainable dispatch decisions while supporting operator collaboration and maintaining human oversight for safety and compliance.
+To support these objectives, the company requires an operations platform that enables field operators to make real-time dispatch decisions based on dynamic conditions--such as weather, traffic, and demand fluctuations. We need to determine a workflow that will enable real-time, explainable dispatch decisions while supporting operator collaboration and maintaining human oversight for safety and compliance.
 
 ## Decision Drivers
 
@@ -33,7 +33,7 @@ MobilityCorp's priorities for the system include:
 
 - GenAI Based Agentic Workflow
 - ML/Forecasting with Dynamic Route Planning (No GenAI)
-- Rule-Based Dispatch System
+- Rule Based Dispatch System
 
 ## Decision Outcome
 
@@ -47,17 +47,15 @@ Chosen option: "GenAI Based Agentic Workflow", because it uniquely enables conve
 
 ## Pros and Cons of the Options
 
-### GenAI-Based Agentic Workflow
+### GenAI Based Agentic Workflow
 
 Builds upon dynamic ML forecasting and route optimization by adding a GenAI orchestration layer. LLMs coordinate specialized agents and tools to provide conversational interaction, natural language explainability, and intelligent synthesis of optimization outputs that traditional approaches cannot deliver.
 
-- Good, because Feedback Agent enables operators to review, question, and negotiate recommendations with agency
+- Good, because Feedback Agent enables operators to review, question, and negotiate recommendations with agent
 - Good, because combines proven optimization algorithms with intelligent LLM orchestration
 - Good, because business logic adjustments require prompt engineering rather than code redeployment
-- Good, because handles nuanced trade-offs and edge cases gracefully
 - Bad, because LLM outputs are non-deterministic, requiring validation and careful prompt engineering
 - Bad, because per-request LLM API costs are higher than traditional compute
-- Bad, because may hallucinate without proper guardrails grounding recommendations in real data
 - Bad, because requires sophisticated observability infrastructure
 
 ### ML/Forecasting with Dynamic Route Planning (No GenAI)
@@ -66,14 +64,13 @@ System uses ML forecasting and vehicle routing optimization to generate dispatch
 
 - Good, because adapts to real-time conditions throughout the day
 - Good, because leverages proven optimization algorithms for route efficiency
-- Good, because deterministic optimization produces reproducible results
 - Good, because lower per-request costs than LLM inference
 - Neutral, because uses the same optimization algorithms as GenAI approach, but lacks intelligent orchestration and conversational layer
 - Bad, because cannot explain reasoning in natural language
 - Bad, because operators cannot negotiate or provide contextual feedback conversationally
 - Bad, because adjusting decision priorities and criteria requires algorithm changes and redeployment
 
-### Rule-Based Dispatch System
+### Rule Based Dispatch System
 
 Hardcoded business logic that dispatches based on prioritization rules.
 
