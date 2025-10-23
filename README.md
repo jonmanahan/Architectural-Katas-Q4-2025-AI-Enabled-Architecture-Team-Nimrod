@@ -1,12 +1,14 @@
-# Nimrod Team's MobilityCorp AI Enabled Architecture
+# Team Nimrod's MobilityCorp AI Enabled Architecture
 
 ![Tower of Babel](/assets/tower-of-babel.png "tower of babel")
 
-## Table of Contents
 
-- [Overview](#overview)
-  - [Core Business Challenges](#core-business-challenges)
-  - [Meet the Nimrods](#meet-the-nimrods)
+## Table of Contents
+- [Overview: Transforming Urban Mobility Through Intelligent Architecture](#overview-transforming-urban-mobility-through-intelligent-architecture)
+  - [Solving Vehicle Availability Through Predictive Demand](#solving-vehicle-availability-through-predictive-demand)
+  - [Optimizing Fleet Redistribution with Advanced Algorithms](#optimizing-fleet-redistribution-with-advanced-algorithms)
+  - [Enhancing Customer Experience Through Intelligent Agents](#enhancing-customer-experience-through-intelligent-agents)
+- [Meet the Nimrods](#meet-the-nimrods)
 - [Requirements](#requirements)
   - [Functional and non-functional requirements](/docs/requirements.md)
 - [System Design](#system-design)
@@ -32,15 +34,33 @@
   - [Pydantic AI for our Agentic Framework Foundation](/docs/decisions//013-agentic-framework.md)
   - [Create Platform Services for Shared Capabilities](/docs/decisions/014-platform-services.md)
 
-## Overview
 
-MobilityCorp is a multi-modal urban mobility provider offering short-term rentals of electric scooters, eBikes, electric cars, and electric vans across multiple city and suburban locations throughout the European Union. The company operates a "last-mile transport" model where customers can book vehicles on-demand through a mobile app, access them via NFC technology, and return them to designated parking spots.
+## Overview: Transforming Urban Mobility Through Intelligent Architecture
+MobilityCorp operates a multi-modal urban mobility service across the European Union, offering short-term rentals of electric scooters, e-bikes, cars, and vans through an on-demand mobile platform. Despite serving a growing market for sustainable "last-mile" transportation, the company faces three critical challenges that directly erode revenue, customer trust, and reliance: 
 
-### Core Business Challenges
+1. Vehicles are unavailable when customers need them
+1. Batteries fail mid-trip with unreliable vehicle charges
+1. Customers primarily use the service only for ad-hoc trips rather than as a reliable option for daily commutes
 
-MobilityCorp faces three interconnected challenges that directly impact revenue, customer satisfaction, and operational efficiency. Customers can't find vehicles when they need them, vehicles run out of power mid-service, and users treat the service as a occasional convenience rather than a reliable daily transportation option. These issues stem from reactive operations rather than predictive, data-driven decision making.
+These problems stem from reactive operations rather than intelligent, data-driven decision making. Our proposed architecture addresses these interconnected challenges through a comprehensive AI-enabled system that transforms MobilityCorp from a reactive fleet operator into a predictive mobility platform, fundamentally improving operational efficiency, customer satisfaction, and revenue growth.
 
-### Meet the Nimrods
+### Solving Vehicle Availability Through Predictive Demand
+
+The core problem of vehicle unavailability stems from poor demand forecasting and inefficient fleet positioning. Our architecture implements a machine learning solution using the LightGBM algorithm to predict demand patterns across different locations, times, and conditions. This model ingests historical usage data, weather patterns, local events, and real-time operational metrics through a medallion data architecture built on Apache Iceberg format. By accurately forecasting where and when customers will need vehicles, MobilityCorp can proactively position inventory rather than reactively responding to shortages. The system processes data through bronze, silver, and gold layers using Databricks, ensuring clean, validated information feeds the forecasting model. This predictive capability transforms vehicle availability from a pain point into a competitive advantage, directly increasing booking conversion rates and customer satisfaction.
+
+### Optimizing Fleet Redistribution with Advanced Algorithms
+
+Even with accurate demand predictions, MobilityCorp must physically move vehicles to meet anticipated needs while minimizing operational costs. Our architecture leverages Google OR-Tools, a powerful constraint optimization library, to solve the vehicle routing problem. The system considers multiple variables including vehicle battery levels, current locations, predicted demand hotspots, driver availability, and time windows to generate optimal redistribution routes. This goes beyond simple geographic balancing by incorporating battery charge states, ensuring vehicles arrive at high-demand locations fully charged and ready for use. The optimizer runs continuously, adapting to real-time conditions and generating efficient dispatch instructions for operations teams. By dramatically reducing the time and cost of fleet rebalancing while ensuring vehicles are where customers need them, this component directly improves both operational margins and service reliability.
+
+### Enhancing Customer Experience Through Intelligent Agents
+
+The third dimension of our solution addresses customer engagement through agentic AI workflows built on the Pydantic AI framework. We implement two specialized agents: an agentic dispatch system that intelligently manages vehicle assignments and operations, and a travel copilot that helps customers plan multi-modal journeys integrating MobilityCorp vehicles with other transportation options. The dispatch agent autonomously handles complex decision making around vehicle assignments, maintenance scheduling, and exception handling, reducing manual operations overhead while improving response times. The travel agent provides personalized journey planning, suggesting optimal combinations of scooters, bikes, cars, and public transit based on trip requirements, weather, and real-time availability. These AI agents transform customer interactions from transactional bookings into assisted mobility experiences, building the daily usage habits that drive long-term customer value. Together with the predictive demand and optimization systems, these agents complete an architecture that doesn't just solve today's operational problems but positions MobilityCorp as an intelligent mobility platform capable of competing in tomorrow's urban transportation landscape.
+
+This AI-enabled architecture represents a fundamental shift from reactive operations to predictive intelligence. By combining machine learning forecasting, mathematical optimization, and autonomous agents within a robust data platform, MobilityCorp can systematically address the root causes of customer dissatisfaction while building sustainable competitive advantages in operational efficiency and user experience.
+
+
+## Meet the Nimrods
+We are team Nimrod, named after history's most ambitious architect who looked at the plains of Babylon and decided to build a tower to the heavens. While his Tower of Babel project ended with some unforeseen communication challenges (divine intervention will do that), we embrace his spirit of audacious thinking. Like our namesake, we coordinate complex systems and reach for the sky, fully aware that ambitious architectural projects sometimes end with everyone scattered and confused. Nimrod was humanity's first documented case of "I can totally manage this complex project," and that optimistic overconfidence lives on in every architect tackling seemingly impossible challenges. We're just hoping our tower reaches a bit higher than his did.
 
 _Architects of big ideas since Babylonia_
 
@@ -98,3 +118,6 @@ _Architects of big ideas since Babylonia_
 12. [Google OR-Tools for Vehicle Redistribution Optimization](/docs/decisions/012-redistribution-optimizer-algo.md)
 13. [Pydantic AI for our Agentic Framework Foundation](/docs/decisions//013-agentic-framework.md)
 14. [Create Platform Services for Shared Capabilities](/docs/decisions/014-platform-services.md)
+
+### Future State Proposed ADRs
+1. [Autonomous-Driving Ride Delivery Agent](/docs/proposals/docs/proposals/001-ride-delivery-agent.md)
