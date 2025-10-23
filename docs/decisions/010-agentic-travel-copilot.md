@@ -70,6 +70,11 @@ A multi-agent conversational layer that orchestrates user requests, with LLM age
 - Bad, because verification/safety/compliance risks and unpredictable latency.
 - Bad, because lower user trust without confirm-before-act; higher privacy exposure.
 
-### Related Documentation
+## Related Documentation
 
-- [Architecture Diagram](images/c3-travel-agent.png)
+- [ADR-001: Value Stream-Aligned Systems](./001-value-stream-aligned-systems.md)
+- [ADR-008: Pydantic AI for Agentic Framework](./008-agentic-framework.md)
+- [ADR-011: Customer Reservations Applications](./011-customer-reservations-applications.md)
+- [ADR-012: Customer API Gateway](./012-customer-api-gateway.md)
+- [Architecture Diagram](../images/c3-travel-agent.png)
+- [System Requirements](../requirements.md)
