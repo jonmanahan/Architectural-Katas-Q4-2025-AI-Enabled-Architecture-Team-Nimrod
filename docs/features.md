@@ -1,13 +1,13 @@
 # Features of MobilityCorp Platform
 
-## Operations System Features
+## Operations (Ops) System Features
 
-1. **Operations Single-Page Application (SPA)**
-   - Next.js web application for operations staff to manage vehicle reservations and administrative workflows.
-2. **Operations Cross-Platform Mobile Application**
+1. **Ops System Single-Page Application (SPA)**
+   - Next.js web application for ops staff to manage vehicle reservations and administrative workflows.
+2. **Ops System Cross-Platform Mobile Application**
    - React Native cross-platform mobile app for field technicians performing maintenance and redistributions with GPS navigation.
-3. **Operations API Gateway**
-   - AWS API Gateway providing VPC-restricted access for internal operations traffic with security and rate limiting.
+3. **Ops API Gateway**
+   - AWS API Gateway providing VPC-restricted access for internal ops traffic with security and rate limiting.
 4. **Admin API**
    - Python FastAPI service for CRUD operations on customer reservations and operational data.
 5. **Dispatch Agent Orchestrator**
@@ -18,8 +18,8 @@
    - LLM agent that enables operators to review, question, and negotiate AI recommendations conversationally.
 8. **Dispatch Manager Agent**
    - LLM agent that executes approved dispatch plans and updates operator assignments.
-9. **Operations Database**
-   - PostgreSQL database storing operations data and demand forecasts.
+9. **Ops Database**
+   - PostgreSQL database storing ops data and demand forecasts.
 10. **External Data Providers**
     - Component for historical data download and scheduled ingestion from traffic, weather, and event sources.
 
@@ -29,7 +29,7 @@
     - Next.js web application with Tailwind CSS for vehicle reservations via web browsers.
 12. **Customer Reservations Cross-Platform Mobile Application**
     - React Native cross-platform mobile app with Expo for iOS and Android providing NFC unlock, GPS tracking, and photo uploads.
-13. **Customer API Gateway**
+13. **Customer Reservations API Gateway**
     - AWS API Gateway providing public access for customer traffic with DDoS protection, rate limiting, and WebSocket support.
 14. **Reservation API**
     - Python FastAPI service for CRUD operations on customer vehicle reservations.
