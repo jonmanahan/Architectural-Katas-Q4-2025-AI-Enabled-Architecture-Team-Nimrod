@@ -33,6 +33,8 @@
   - [Google OR-Tools for Vehicle Redistribution Optimization](/docs/decisions/012-redistribution-optimizer-algo.md)
   - [Pydantic AI for our Agentic Framework Foundation](/docs/decisions//013-agentic-framework.md)
   - [Create Platform Services for Shared Capabilities](/docs/decisions/014-platform-services.md)
+- Proposed Future State ADRs
+  - [Autonomous-Driving Ride Delivery Agent](/docs/proposals/docs/proposals/001-ride-delivery-agent.md)
 
 
 ## Overview: Transforming Urban Mobility Through Intelligent Architecture
