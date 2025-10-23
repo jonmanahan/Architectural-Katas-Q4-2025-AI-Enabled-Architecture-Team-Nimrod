@@ -1,4 +1,4 @@
-# Establish Platform Services for Cross-Cutting Capabilities
+# Create Platform Services for Shared Capabilities
 
 ## Context and Problem Statement
 
