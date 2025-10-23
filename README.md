@@ -41,8 +41,8 @@
 MobilityCorp operates a multi-modal urban mobility service across the European Union, offering short-term rentals of electric scooters, e-bikes, cars, and vans through an on-demand mobile platform. Despite serving a growing market for sustainable "last-mile" transportation, the company faces three critical challenges that directly erode revenue, customer trust, and reliance: 
 
 1. Vehicles are unavailable when customers need them
-1. Batteries fail mid-trip with unreliable vehicle charges
-1. Customers primarily use the service only for ad-hoc trips rather than as a reliable option for daily commutes
+2. Batteries fail mid-trip with unreliable vehicle charges
+3. Customers primarily use the service only for ad-hoc trips rather than as a reliable option for daily commutes
 
 These problems stem from reactive operations rather than intelligent, data-driven decision making. Our proposed architecture addresses these interconnected challenges through a comprehensive AI-enabled system that transforms MobilityCorp from a reactive fleet operator into a predictive mobility platform, fundamentally improving operational efficiency, customer satisfaction, and revenue growth.
 
