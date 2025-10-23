@@ -80,6 +80,11 @@ Hardcoded business logic that dispatches based on prioritization rules.
 - Bad, because workflow cannot learn from operator feedback over time
 - Bad, because no conversational interface for operator negotiation or natural language explanation
 
-### Related Documentation
+## Related Documentation
 
-- [Architecture Diagram](images/c3-dispatch-agent.png)
+- [ADR-001: Value Stream-Aligned Systems](./001-value-stream-aligned-systems.md)
+- [ADR-008: Pydantic AI for Agentic Framework](./008-agentic-framework.md)
+- [ADR-013: Operations Applications](./013-operations-applications.md)
+- [ADR-014: Operations API Gateway](./014-operations-api-gateway.md)
+- [Architecture Diagram](../images/c3-dispatch-agent.png)
+- [System Requirements](../requirements.md)
