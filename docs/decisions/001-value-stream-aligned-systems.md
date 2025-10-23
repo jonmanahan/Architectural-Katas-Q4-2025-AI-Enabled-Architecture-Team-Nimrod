@@ -1,4 +1,12 @@
-# Value Stream-Aligned Systems
+---
+status: "accepted"
+date: 2025-10-22
+decision-makers: [Nimrod Architecture Team]
+consulted: [Operations Team, Data Science Team, Reservation Team]
+informed: [Engineering Teams, Product Teams]
+---
+
+# Create Value Stream-Aligned Systems
 
 ## Context and Problem Statement
 
@@ -14,51 +22,44 @@ How should we organize the larger systems architecture? Should we split the syst
 
 Chosen option: "Option 2: Split into value stream-aligned systems", because it enables independent delivery of value to distinct user groups, allows teams to optimize for their specific users' needs, and reduces coupling between systems serving different business purposes.
 
-The system will be split into three value stream-aligned systems:
+The system will be split into three value stream-aligned and platform services
 
-### 1. Operations System
-**Purpose**: Enable internal staff to manage and operate the business, also focus on delivering features tailored to maintain and redistribute our fleet based on demand.
-- **Components**: UI, backend, databases, agents
-- **Primary Users**: Internal operations staff, administrators, fleet redistributors and maintainers
-- **Value Stream**: Operational efficiency and business management
+### Operations System
+Enable internal staff to manage and operate the business, also focus on delivering features tailored to maintain and redistribute our fleet based on demand.
+- Components include UI, backend, databases, agents
+- Users include internal operations staff, administrators, fleet redistributors and maintainers
+- Value stream aligned to operational efficiency and business management
 
-### 2. Customer Reservation System
-**Purpose**: Enable customers to discover, book, and manage reservations
-- **Components**: Customer-facing UIs, reservations backend, databases, and customer facing agents
-- **Primary Users**: Customers
-- **Value Stream**: Customer acquisition, booking conversion, customer reliance on services
+### Customer Reservation System
+Enable customers to discover, book, and manage reservations
+- Components include customer-facing UIs, reservations backend, databases, and customer facing agents
+- Users include customers
+- Value stream aligned to customer acquisition, booking conversion, customer reliance on services
 
-### 3. Data Intelligence Platform System
-**Purpose**: Enable data scientists and analysts to experiment with ML models and derive insights
-- **Components**: Data pipelines, ML experimentation environment, Feature stores
-- **Primary Users**: Data scientists, ML engineers, analysts
-- **Value Stream**: Data-driven insights and ML capabilities
+### Data Intelligence Platform System
+Enable data scientists and analysts to experiment with ML models and derive insights
+- Components include data pipelines, ML experimentation environment, Feature stores
+- Users include Data scientists, ML engineers, analysts
+- Value stream aligned to data-driven insights and ML capabilities
+- Platform aligned to leveraging off the self platform components
 
-### 4. Engineering Platform Systems
-**Purpose**: Enable engineers via a series a platform capabilities that are shared across the infrastructure, and separate complex subsystems
-- **Components**: DevOps, accounts and auth, notifications, payment processing
-- **Primary Users**: Stream aligned engineering teams
-- **Value Stream**: Platforms, enablement, and complex subsystems
+### Platform Services
+ Enable engineers via a series a platform capabilities that are shared across the infrastructure, and separate complex subsystems
+- Components include devops templates, accounts and auth, notifications, payment processing
+- Users include stream aligned engineering teams
+- Focus on platform, enablement, and complex subsystem team roles
 
 ## Consequences
 
-### Positive
+* Good, because each system can evolve independently at its own pace based on user needs
+* Good, because teams can be organized around value streams with clear ownership and accountability
+* Good, because functionality can be encapsulated in different bounded contexts with strong contracts based on user scenarios
+* Good, because technology choices can be optimized per system
+*  Good, because easier to scale systems independently based on their specific load patterns
+* Bad, because requires establishing contracts/APIs between systems for any cross-system functionality
+* Bad, because increases operational complexity with multiple deployments and infrastructure
 
-* Each system can evolve independently at its own pace based on user needs
-* Teams can be organized around value streams with clear ownership and accountability
-* Functionality can be encapsulated in different bounded contexts with strong contracts based on user scenarios
-* Technology choices can be optimized per system (e.g., different databases, frameworks)
-* Easier to scale systems independently based on their specific load patterns
-
-### Negative
-
-* Requires establishing contracts/APIs between systems for any cross-system functionality
-* Increases operational complexity with multiple deployments and infrastructure
-* Potential for data duplication across systems
-* Need for cross-system observability and monitoring strategy
-* May require shared services or platform capabilities (authentication, logging, etc.)
-
-## Links
+## Related Documentation
 
 * [Team Topologies - Stream-Aligned Teams](https://teamtopologies.com/key-concepts)
 * [Domain-Driven Design - Bounded Contexts](https://martinfowler.com/bliki/BoundedContext.html)
