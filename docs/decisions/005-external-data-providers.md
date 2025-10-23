@@ -1,4 +1,12 @@
-# External Data Provider Architecture
+---
+status: "accepted"
+date: 2025-10-22
+decision-makers: [Nimrod Architecture Team]
+consulted: [Operations Team, Data Platform Team, Platform Engineering Team]
+informed: [Engineering and Product Teams]
+---
+
+# Extensible External Data Provider Architecture
 
 ## Context and Problem Statement
 
@@ -14,8 +22,6 @@ Our systems need to integrate data from various external sources including traff
 ## Decision Outcome
 
 Chosen option: "Option 3: Create extensible architecture with specialized data extraction microservices", because it provides flexibility to handle diverse integration patterns, allows independent scaling and deployment of data extractors, enables specialization per data source, and supports both polling and push architectures while maintaining a consistent internal interface.
-
-## Architecture Components
 
 ### Core Components
 
@@ -53,23 +59,20 @@ Chosen option: "Option 3: Create extensible architecture with specialized data e
 
 ### Positive
 
-* Easy to add new data sources - create new microservice without affecting existing ones
-* Leverage managed infrastructure for scheduling reduces operational burden and development time
-* Independent scaling based on data volume and extraction frequency per source
-* Isolation of failures, issues with one provider don't affect others
-* Flexibility to use different tech stacks optimized for specific providers
-* Clear ownership and specialization per data source
-* Supports both polling and push patterns within unified architecture
-* Centralized observability and monitoring of all external integrations
-* Rate limiting and retry logic encapsulated per provider
-* Easier testing and mocking of external dependencies
-
-### Negative
-
-* Increased operational complexity with multiple services to deploy and monitor
-* Need for service discovery and configuration management
-* Potential for inconsistent implementation patterns across extractors
-* Requires well-defined event schemas and versioning strategy
-* Additional infrastructure costs for message bus and multiple services
-* Need for comprehensive observability across all extractors
-* Risk of schema evolution challenges as extractors are added
+* Good, because easy to add new data sources and create new microservice without affecting existing ones
+* Good, because leverage managed infrastructure for scheduling reduces operational burden and development time
+* Good, because independent scaling based on data volume and extraction frequency per source
+* Good, because isolation of failures, issues with one provider don't affect others
+* Good, because flexibility to use different tech stacks optimized for specific providers
+* Good, because clear ownership and specialization per data source
+* Good, because supports both polling and push patterns within unified architecture
+* Good, because centralized observability and monitoring of all external integrations
+* Good, because rate limiting and retry logic encapsulated per provider
+* Good, because easier testing and mocking of external dependencies
+* Bad, because increased operational complexity with multiple services to deploy and monitor
+* Bad, because need for service discovery and configuration management
+* Bad, because potential for inconsistent implementation patterns across extractors
+* Bad, because requires standardized event schemas and versioning strategy
+* Bad, because additional infrastructure costs for multiple services
+* Bad, because need for comprehensive observability across all services
+* Bad, because risk of schema evolution challenges as extractors are added
