@@ -32,13 +32,18 @@ We need to determine a backend and gateway architecture that aligns with AI/ML i
 
 ## Decision Outcome
 
-Chosen option: "Python FastAPI with AWS API Gateway", because it aligns with our value stream-aligned architecture (ADR-001) enabling the Operations Team to own their backend stack independently, while maintaining architectural consistency with customer systems (ADR-012). The architecture consists of AWS API Gateway routing traffic to two FastAPI services: (1) Admin API for CRUD operations on reservations (via Reservation System) and operational data (persisting to Operations Database), and (2) Dispatch Agent Orchestrator implementing agentic workflows with Data Intelligence Platform integration for forecasting and Notification Service for alerts. Python provides seamless integration with AI/ML infrastructure (Pydantic AI from ADR-008), while AWS Gateway provides security and potential VPC/IP restrictions for internal-only traffic.
+Chosen option: "Python FastAPI with AWS API Gateway", because it aligns with our value stream-aligned architecture (ADR-001) enabling the Operations Team to own their backend stack independently, while maintaining architectural consistency with customer reservation systems (ADR-012). The architecture consists of AWS API Gateway routing traffic to two FastAPI services:
+
+1. Admin API for CRUD operations on reservations via the Reservation System and operational data
+2. Dispatch Agent Orchestrator implementing agentic workflows with our Data Intelligence Platform integration for forecasting
+
+Python provides seamless integration with our AI/ML infrastructure, while AWS Gateway provides security and potential VPC/IP restrictions for internal-only traffic.
 
 ## Pros and Cons of the Options
 
-### Python FastAPI + AWS API Gateway (Chosen)
+### Python FastAPI + AWS API Gateway
 
-Python FastAPI for backend services behind AWS API Gateway, serving operations applications from ADR-013 with enhanced security for internal traffic.
+Python FastAPI for backend services behind AWS API Gateway, serving operations applications from the operations SPA/cross-platform mobile app with enhanced security for internal traffic.
 
 - Good, because Python dominates AI/ML ecosystem ensuring seamless integration with Dispatch Agent workflows (ADR-009)
 - Good, because stream-aligned team owns complete operations backend stack independently (ADR-001)
@@ -60,7 +65,7 @@ Node.js with Express framework for backend services behind AWS API Gateway for o
 
 ### Python FastAPI + Custom Gateway (Future State)
 
-Custom API gateway framework for operations traffic, potentially shared infrastructure with customer gateway evolution.
+Custom API gateway framework designed to handle higher traffic volumes for operations traffic, potentially shared infrastructure with customer gateway evolution.
 
 - Good, because complete control over routing and internal security policies
 - Good, because cost optimization at scale

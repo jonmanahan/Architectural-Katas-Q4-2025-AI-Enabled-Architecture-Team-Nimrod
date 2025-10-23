@@ -6,7 +6,7 @@ consulted: [Operations Team, Data Science Team, Reservation Team]
 informed: [Engineering Teams, Product Teams]
 ---
 
-# Travel Agent Using GenAI
+# Travel "Agent" Using GenAI
 
 ## Context and Problem Statement
 
