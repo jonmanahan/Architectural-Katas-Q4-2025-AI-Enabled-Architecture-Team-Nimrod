@@ -2,8 +2,8 @@
 
 ![Tower of Babel](/assets/tower-of-babel.png "tower of babel")
 
-
 ## Table of Contents
+
 - [Overview: Transforming Urban Mobility Through Intelligent Architecture](#overview-transforming-urban-mobility-through-intelligent-architecture)
   - [Solving Vehicle Availability Through Predictive Demand](#solving-vehicle-availability-through-predictive-demand)
   - [Optimizing Fleet Redistribution with Advanced Algorithms](#optimizing-fleet-redistribution-with-advanced-algorithms)
@@ -11,6 +11,8 @@
 - [Meet the Nimrods](#meet-the-nimrods)
 - [Requirements](#requirements)
   - [Functional and non-functional requirements](/docs/requirements.md)
+- [Features](#features)
+  - [Features of MobilityCorp Platform](/docs/features.md)
 - [System Design](#system-design)
   - [MobilityCorp System Context Diagram (C1)](/docs/diagrams/c1-context.png)
   - [Reservation Service Container Diagram (C2)](/docs/diagrams/c2-res.png)
@@ -36,9 +38,9 @@
   - [Future State Proposed ADRs](#future-state-proposed-adrs)
     - [Autonomous-Driving Ride Delivery Agent](/docs/proposals/docs/proposals/001-ride-delivery-agent.md)
 
-
 ## Overview: Transforming Urban Mobility Through Intelligent Architecture
-MobilityCorp operates a multi-modal urban mobility service across the European Union, offering short-term rentals of electric scooters, e-bikes, cars, and vans through an on-demand mobile platform. Despite serving a growing market for sustainable "last-mile" transportation, the company faces three critical challenges that directly erode revenue, customer trust, and reliance: 
+
+MobilityCorp operates a multi-modal urban mobility service across the European Union, offering short-term rentals of electric scooters, e-bikes, cars, and vans through an on-demand mobile platform. Despite serving a growing market for sustainable "last-mile" transportation, the company faces three critical challenges that directly erode revenue, customer trust, and reliance:
 
 1. Vehicles are unavailable when customers need them
 1. Batteries fail mid-trip with unreliable vehicle charges
@@ -60,8 +62,8 @@ The third dimension of our solution addresses customer engagement through agenti
 
 This AI-enabled architecture represents a fundamental shift from reactive operations to predictive intelligence. By combining machine learning forecasting, mathematical optimization, and autonomous agents within a robust data platform, MobilityCorp can systematically address the root causes of customer dissatisfaction while building sustainable competitive advantages in operational efficiency and user experience.
 
-
 ## Meet the Nimrods
+
 We are team Nimrod, named after history's most ambitious architect who looked at the plains of Babylon and decided to build a tower to the heavens. While his Tower of Babel project ended with some unforeseen communication challenges (divine intervention will do that), we embrace his spirit of audacious thinking. Like our namesake, we coordinate complex systems and reach for the sky, fully aware that ambitious architectural projects sometimes end with everyone scattered and confused. Nimrod was humanity's first documented case of "I can totally manage this complex project," and that optimistic overconfidence lives on in every architect tackling seemingly impossible challenges. We're just hoping our tower reaches a bit higher than his did.
 
 _Architects of big ideas since Babylonia_
@@ -73,6 +75,10 @@ _Architects of big ideas since Babylonia_
 ## Requirements
 
 [Functional and non-functional requirements](/docs/requirements.md)
+
+## Features
+
+[Features of MobilityCorp Platform](/docs/features.md)
 
 ## System Design
 
@@ -122,4 +128,5 @@ _Architects of big ideas since Babylonia_
 14. [Create Platform Services for Shared Capabilities](/docs/decisions/014-platform-services.md)
 
 ### Future State Proposed ADRs
+
 1. [Autonomous-Driving Ride Delivery Agent](/docs/proposals/docs/proposals/001-ride-delivery-agent.md)
