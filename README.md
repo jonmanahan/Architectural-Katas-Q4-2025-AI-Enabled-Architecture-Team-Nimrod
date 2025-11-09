@@ -65,7 +65,7 @@ This AI-enabled architecture represents a fundamental shift from reactive operat
 
 ## 📹 Semi-Finalist Presentation Video
 
-Click here to watch our team walk through the complete MobilityCorp AI-enabled architecture solution in our semi-finals presentation video:
+Click below to watch our team walk through the complete MobilityCorp AI-enabled architecture solution in our semi-finals presentation video:
 
 [![Watch the video](https://img.youtube.com/vi/UtDzBRmExuM/maxresdefault.jpg)](https://youtu.be/UtDzBRmExuM)
 
