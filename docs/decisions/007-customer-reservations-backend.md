@@ -78,9 +78,9 @@ Custom API gateway framework designed to handle higher traffic volumes.
 ## Related Documentation
 
 - [ADR-001: Value Stream-Aligned Systems](./001-value-stream-aligned-systems.md)
-- [ADR-008: Pydantic AI for Agentic Framework](./008-agentic-framework.md)
-- [ADR-010: Travel Agent Using GenAI](./010-agentic-travel-copilot.md)
-- [ADR-011: Customer Reservations Applications](./011-customer-reservations-applications.md)
-- [ADR-014: Operations API Gateway](./014-operations-api-gateway.md)
+- [ADR-013: Pydantic AI for Agentic Framework](./013-agentic-framework.md)
+- [ADR-008: Travel Agent Orchestrator](./008-travel-agent-orchestrator.md)
+- [ADR-006: Customer Reservations Applications](./006-customer-reservations-frontend.md)
+- [ADR-003: Operations API Gateway](./003-operations-system-backend.md)
 - [Architecture Diagram](../diagrams/c2-res.png)
 - [System Requirements](../requirements.md)

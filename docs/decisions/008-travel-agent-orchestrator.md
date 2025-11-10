@@ -6,7 +6,7 @@ consulted: [Operations Team, Data Science Team, Reservation Team]
 informed: [Engineering Teams, Product Teams]
 ---
 
-# Travel "Agent" Using GenAI
+# Travel Agent Orchestrator Using GenAI
 
 ## Context and Problem Statement
 
@@ -73,8 +73,8 @@ A multi-agent conversational layer that orchestrates user requests, with LLM age
 ## Related Documentation
 
 - [ADR-001: Value Stream-Aligned Systems](./001-value-stream-aligned-systems.md)
-- [ADR-008: Pydantic AI for Agentic Framework](./008-agentic-framework.md)
-- [ADR-011: Customer Reservations Applications](./011-customer-reservations-applications.md)
-- [ADR-012: Customer API Gateway](./012-customer-api-gateway.md)
+- [ADR-013: Pydantic AI for Agentic Framework](./013-agentic-framework.md)
+- [ADR-006: Customer Reservations Applications](./006-customer-reservations-frontend.md)
+- [ADR-007: Customer API Gateway](./007-customer-reservations-backend.md)
 - [Architecture Diagram](../images/c3-travel-agent.png)
 - [System Requirements](../requirements.md)

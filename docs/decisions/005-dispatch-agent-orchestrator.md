@@ -6,7 +6,7 @@ consulted: [Operations Team, Data Science Team]
 informed: [Engineering Team, Product Team]
 ---
 
-# Agentic Dispatch Workflow Using GenAI
+# Dispatch Agent Orchestrator Using GenAI
 
 ## Context and Problem Statement
 
@@ -75,7 +75,7 @@ System uses ML forecasting and vehicle routing optimization to generate dispatch
 Hardcoded business logic that dispatches based on prioritization rules.
 
 - Good, because fast execution with minimal computational overhead
-- Good, because business stakeholders understand and can explictly influence rules and logic
+- Good, because business stakeholders understand and can explicitly influence rules and logic
 - Bad, because complexity grows exponentially with number of variables
 - Bad, because workflow cannot learn from operator feedback over time
 - Bad, because no conversational interface for operator negotiation or natural language explanation
@@ -83,8 +83,8 @@ Hardcoded business logic that dispatches based on prioritization rules.
 ## Related Documentation
 
 - [ADR-001: Value Stream-Aligned Systems](./001-value-stream-aligned-systems.md)
-- [ADR-008: Pydantic AI for Agentic Framework](./008-agentic-framework.md)
-- [ADR-013: Operations Applications](./013-operations-applications.md)
-- [ADR-014: Operations API Gateway](./014-operations-api-gateway.md)
+- [ADR-013: Pydantic AI for Agentic Framework](./013-agentic-framework.md)
+- [ADR-002: Operations Applications](./002-operations-system-frontend.md)
+- [ADR-003: Operations API Gateway](./003-operations-system-backend.md)
 - [Architecture Diagram](../images/c3-dispatch-agent.png)
 - [System Requirements](../requirements.md)
