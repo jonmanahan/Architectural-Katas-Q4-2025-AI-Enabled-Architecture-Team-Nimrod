@@ -53,7 +53,7 @@ These problems stem from reactive operations rather than intelligent, data-drive
 
 ### Solving Vehicle Availability Through Predictive Demand
 
-The core problem of vehicle unavailability stems from poor demand forecasting and inefficient fleet positioning. Our architecture implements a machine learning solution using the LightGBM algorithm to predict demand patterns across different locations, times, and conditions. This model ingests historical usage data, weather patterns, local events, and real-time operational metrics through a medallion data architecture built on Apache Iceberg format. By accurately forecasting where and when customers will need vehicles, MobilityCorp can proactively position inventory rather than reactively responding to shortages. The system processes data through bronze, silver, and gold layers using Databricks, ensuring clean, validated information feeds the forecasting model. This predictive capability transforms vehicle availability from a pain point into a competitive advantage, directly increasing booking conversion rates and customer satisfaction.
+The core problem of vehicle unavailability stems from poor demand forecasting and inefficient fleet positioning. Our architecture implements a  [machine learning solution using the LightGBM framework](/docs/decisions/011-forecast-model.md) to predict demand patterns across different locations, times, and conditions. This model ingests historical usage data, weather patterns, local events, and real-time operational metrics through a [medallion data architecture built on Apache Iceberg format](/docs/decisions/009-medallion-data-lake.md). By accurately forecasting where and when customers will need vehicles, MobilityCorp can proactively position inventory rather than reactively responding to shortages. The system processes data through bronze, silver, and gold layers using Databricks, ensuring clean, validated information feeds the forecasting model. This predictive capability transforms vehicle availability from a pain point into a competitive advantage, directly increasing booking conversion rates and customer satisfaction.
 
 ### Optimizing Fleet Redistribution with Advanced Algorithms
 
@@ -144,7 +144,7 @@ This incremental approach allows ROI measurement at each gate with the flexibili
 5. [Agentic Dispatch Workflow Using GenAI](/docs/decisions/005-agentic-dispatch-workflow.md)
 6. [Next.js + React Native with Monorepo for Customer Reservations Applications](/docs/decisions/006-customer-reservations-frontend.md)
 7. [Python FastAPI for Customer Reservation Backend and API Gateway](/docs/decisions/007-customer-reservations-backend.md)
-8. [Travel "Agent" Using GenAI](/docs/decisions/008-agentic-travel-copilot.md)
+8. [Agentic Travel Agent Workflow Using GenAI](/docs/decisions/008-agentic-travel-copilot.md)
 9. [Adopt Medallion Architecture using Iceberg format for Data Lake](/docs/decisions/009-medallion-data-lake.md)
 10. [Use Databricks for ETL, ML Experimentation, and Model Serving](/docs/decisions/010-databricks-for-etl-mlflow-inference.md)
 11. [Demand Forecasting with LightGBM Machine Learning Model](/docs/decisions/011-forecast-model.md)
