@@ -14,6 +14,8 @@
   - [Functional and non-functional requirements](/docs/requirements.md)
 - [Features](#features)
   - [Features of MobilityCorp Platform](/docs/features.md)
+- [Implementation Roadmap](#implementation-roadmap)
+  - [Phased Approach with Cost Estimates](/docs/phased-approach.md)
 - [System Design](#system-design)
   - [MobilityCorp System Context Diagram (C1)](/docs/diagrams/c1-context.png)
   - [Reservation Service Container Diagram (C2)](/docs/diagrams/c2-res.png)
@@ -88,6 +90,20 @@ _Architects of big ideas since Babylonia_
 ## Features
 
 [Features of MobilityCorp Platform](/docs/features.md)
+
+## Implementation Roadmap
+
+[Phased Approach with Cost Estimates](/docs/phased-approach.md)
+
+The architrecture will be delivered accross four phases:
+
+- **Phase 1:** Routing optimizer for 30% better vehicle utilization
+- **Phase 2:** Demand forecasting to anticipate customer needs
+- **Phase 3a:** Customer-facing Travel Agent for conversational booking
+- **Phase 3b:** Operations Dispatch Agent for battery swaps and redistribution
+- **Phase 4:** Scale optimization to handle 10x customer growth
+
+This incremental approach allows ROI measurement at each gate with the flexibility to course-correct as needed. Total timeline: 13 months | Engineering investment: ~€785,000
 
 ## System Design
 

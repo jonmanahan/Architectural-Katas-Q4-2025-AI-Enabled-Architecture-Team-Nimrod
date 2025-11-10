@@ -77,8 +77,8 @@ Custom API gateway framework designed to handle higher traffic volumes for opera
 ## Related Documentation
 
 - [ADR-001: Value Stream-Aligned Systems](./001-value-stream-aligned-systems.md)
-- [ADR-008: Pydantic AI for Agentic Framework](./008-agentic-framework.md)
-- [ADR-009: Agentic Dispatch Workflow](./009-agentic-dispatch-workflow.md)
-- [ADR-012: Customer API Gateway](./012-customer-api-gateway.md)
-- [ADR-013: Operations Applications](./013-operations-applications.md)
+- [ADR-013: Pydantic AI for Agentic Framework](./013-agentic-framework.md)
+- [ADR-005: Dispatch Agent Orchestrator](./005-dispatch-agent-orchestrator.md)
+- [ADR-007: Customer API Gateway](./007-customer-reservations-backend.md)
+- [ADR-002: Operations Applications](./002-operations-system-frontend.md)
 - [Architecture Diagram](../diagrams/c2-ops.png)

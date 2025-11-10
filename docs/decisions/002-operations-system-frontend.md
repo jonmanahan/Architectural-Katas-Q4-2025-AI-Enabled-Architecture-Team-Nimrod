@@ -69,8 +69,8 @@ Flutter with Dart for iOS, Android, and web via WebAssembly in single codebase.
 ## Related Documentation
 
 - [ADR-001: Value Stream-Aligned Systems](./001-value-stream-aligned-systems.md)
-- [ADR-009: Agentic Dispatch Workflow](./009-agentic-dispatch-workflow.md)
-- [ADR-011: Customer Reservations Applications](./011-customer-reservations-applications.md)
-- [ADR-014: Operations API Gateway](./014-operations-api-gateway.md)
+- [ADR-005: Dispatch Agent Orchestrator](./005-dispatch-agent-orchestrator.md)
+- [ADR-006: Customer Reservations Applications](./006-customer-reservations-frontend.md)
+- [ADR-003: Operations API Gateway](./003-operations-system-backend.md)
 - [Architecture Diagram](../diagrams/c2-ops.png)
 - [System Requirements](../requirements.md)

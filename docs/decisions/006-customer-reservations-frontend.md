@@ -73,8 +73,8 @@ Use Google's Flutter framework with the Dart programming language for iOS, Andro
 ## Related Documentation
 
 - [ADR-001: Value Stream-Aligned Systems](./001-value-stream-aligned-systems.md)
-- [ADR-010: Travel Agent Using GenAI](./010-agentic-travel-copilot.md)
-- [ADR-012: Customer API Gateway](./012-customer-api-gateway.md)
-- [ADR-013: Operations Applications](./013-operations-applications.md)
+- [ADR-008: Travel Agent Orchestrator](./008-travel-agent-orchestrator.md)
+- [ADR-007: Customer API Gateway](./007-customer-reservations-backend.md)
+- [ADR-002: Operations Applications](./002-operations-system-frontend.md)
 - [Architecture Diagram](../diagrams/c2-res.png)
 - [System Requirements](../requirements.md)
