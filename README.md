@@ -57,11 +57,11 @@ The core problem of vehicle unavailability stems from poor demand forecasting an
 
 ### Optimizing Fleet Redistribution with Advanced Algorithms
 
-Even with accurate demand predictions, MobilityCorp must physically move vehicles to meet anticipated needs while minimizing operational costs. Our architecture leverages Google OR-Tools, a powerful constraint optimization library, to solve the vehicle routing problem. The system considers multiple variables including vehicle battery levels, current locations, predicted demand hotspots, driver availability, and time windows to generate optimal redistribution routes. This goes beyond simple geographic balancing by incorporating battery charge states, ensuring vehicles arrive at high-demand locations fully charged and ready for use. The optimizer runs continuously, adapting to real-time conditions and generating efficient dispatch instructions for operations teams. By dramatically reducing the time and cost of fleet rebalancing while ensuring vehicles are where customers need them, this component directly improves both operational margins and service reliability.
+Even with accurate demand predictions, MobilityCorp must physically move vehicles to meet anticipated needs while minimizing operational costs. Our [architecture leverages Google OR-Tools, a powerful constraint optimization library, to solve the vehicle routing problem](/docs/decisions/012-redistribution-optimizer-algo.md). The system considers multiple variables including vehicle battery levels, current locations, predicted demand hotspots, driver availability, and time windows to generate optimal redistribution routes. This goes beyond simple geographic balancing by incorporating battery charge states, ensuring vehicles arrive at high-demand locations fully charged and ready for use. The optimizer runs continuously, adapting to real-time conditions and generating efficient dispatch instructions for operations teams. By dramatically reducing the time and cost of fleet rebalancing while ensuring vehicles are where customers need them, this component directly improves both operational margins and service reliability.
 
 ### Enhancing Customer Experience Through Intelligent Agents
 
-The third dimension of our solution addresses customer engagement through agentic AI workflows built on the Pydantic AI framework. We implement two specialized agents: an agentic dispatch system that intelligently manages vehicle assignments and operations, and a travel copilot that helps customers plan multi-modal journeys integrating MobilityCorp vehicles with other transportation options. The dispatch agent autonomously handles complex decision making around vehicle assignments, maintenance scheduling, and exception handling, reducing manual operations overhead while improving response times. The travel agent provides personalized journey planning, suggesting optimal combinations of scooters, bikes, cars, and public transit based on trip requirements, weather, and real-time availability. These AI agents transform customer interactions from transactional bookings into assisted mobility experiences, building the daily usage habits that drive long-term customer value. Together with the predictive demand and optimization systems, these agents complete an architecture that doesn't just solve today's operational problems but positions MobilityCorp as an intelligent mobility platform capable of competing in tomorrow's urban transportation landscape.
+The third dimension of our solution addresses customer engagement through [agentic AI workflows built on the Pydantic AI framework](/docs/decisions//013-agentic-framework.md). We implement two specialized agents: an [agentic dispatch system](/docs/decisions/005-agentic-dispatch-workflow.md) that intelligently manages vehicle assignments and operations, and a [travel agent copilot](/docs/decisions/008-agentic-travel-copilot.md) that helps customers plan multi-modal journeys integrating MobilityCorp vehicles with other transportation options. The dispatch agent autonomously handles complex decision making around vehicle assignments, maintenance scheduling, and exception handling, reducing manual operations overhead while improving response times. The travel agent provides personalized journey planning, suggesting optimal combinations of scooters, bikes, cars, and public transit based on trip requirements, weather, and real-time availability. These AI agents transform customer interactions from transactional bookings into assisted mobility experiences, building the daily usage habits that drive long-term customer value. Together with the predictive demand and optimization systems, these agents complete an architecture that doesn't just solve today's operational problems but positions MobilityCorp as an intelligent mobility platform capable of competing in tomorrow's urban transportation landscape.
 
 This AI-enabled architecture represents a fundamental shift from reactive operations to predictive intelligence. By combining machine learning forecasting, mathematical optimization, and autonomous agents within a robust data platform, MobilityCorp can systematically address the root causes of customer dissatisfaction while building sustainable competitive advantages in operational efficiency and user experience.
 
@@ -111,27 +111,27 @@ This incremental approach allows ROI measurement at each gate with the flexibili
 
 ![System Context Diagram](/docs/diagrams/c1-context.png "System Context Diagram")
 
-### Reservation Service Container Diagram (C2)
+### Reservation System Container Diagram (C2)
 
-![Reservation Service Container Diagram (C2)](/docs/diagrams/c2-res.png "Reservation Service Container Diagram (C2)")
+![Reservation System Container Diagram (C2)](/docs/diagrams/c2-res.png "Reservation System Container Diagram (C2)")
 
-### Travel Agent Component Diagram (C3)
+### Travel Agent Orchestrator Component Diagram (C3)
 
-![Travel Agent Component Diagram (C3)](/docs/diagrams/c3-travel-agent.png "Travel Agent Component Diagram (C3))")
+![Travel Agent Orchestrator Component Diagram (C3)](/docs/diagrams/c3-travel-agent.png "Travel Agent Orchestrator Component Diagram (C3))")
 
-### Operations Service Container Diagram (C2)
+### Operations System Container Diagram (C2)
 
-![Operations Service Container Diagram (C2)](/docs/diagrams/c2-ops.png "Operations Service Container Diagram (C2)")
+![Operations System Container Diagram (C2)](/docs/diagrams/c2-ops.png "Operations System Container Diagram (C2)")
 
-### Dispatch Agent Component Diagram (C3)
+### Dispatch Agent Orchestrator Component Diagram (C3)
 
-![Dispatch Agent Component Diagram (C3)](/docs/diagrams/c3-dispatch-agent.png "Dispatch Agent Component Diagram (C3))")
+![Dispatch Agent Orchestrator Component Diagram (C3)](/docs/diagrams/c3-dispatch-agent.png "Dispatch Agent Orchestrator Component Diagram (C3))")
 
 ### Data Intelligence Platform Container Diagram (C2)
 
 ![Data Intelligence Platform Container Diagram (C2)](/docs/diagrams/c2-data.png "Data Intelligence Platform Container Diagram (C2)")
 
-### Experimentation Platform Component Diagram (C3)
+### ML/AI Experimentation Platform Component Diagram (C3)
 
 ![Experimentation Platform Component Diagram (C3)](/docs/diagrams/c3-exp.png "Experimentation Platform Component Diagram (C3)")
 
@@ -141,10 +141,10 @@ This incremental approach allows ROI measurement at each gate with the flexibili
 2. [Next.js + React Native with Monorepo for Operations Applications](/docs/decisions/002-operations-system-frontend.md)
 3. [Python FastAPI for Operations Backend and API Gateway](/docs/decisions/003-operations-system-backend.md)
 4. [Extensible External Data Provider Architecture](/docs/decisions/004-external-data-providers.md)
-5. [Agentic Dispatch Workflow Using GenAI](/docs/decisions/005-agentic-dispatch-workflow.md)
+5. [Agentic Dispatch Orchestrator Using GenAI](/docs/decisions/005-agentic-dispatch-workflow.md)
 6. [Next.js + React Native with Monorepo for Customer Reservations Applications](/docs/decisions/006-customer-reservations-frontend.md)
 7. [Python FastAPI for Customer Reservation Backend and API Gateway](/docs/decisions/007-customer-reservations-backend.md)
-8. [Agentic Travel Agent Workflow Using GenAI](/docs/decisions/008-agentic-travel-copilot.md)
+8. [Agentic Travel Agent Orchestrator Using GenAI](/docs/decisions/008-agentic-travel-copilot.md)
 9. [Adopt Medallion Architecture using Iceberg format for Data Lake](/docs/decisions/009-medallion-data-lake.md)
 10. [Use Databricks for ETL, ML Experimentation, and Model Serving](/docs/decisions/010-databricks-for-etl-mlflow-inference.md)
 11. [Demand Forecasting with LightGBM Machine Learning Model](/docs/decisions/011-forecast-model.md)
