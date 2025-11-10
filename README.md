@@ -8,6 +8,7 @@
   - [Solving Vehicle Availability Through Predictive Demand](#solving-vehicle-availability-through-predictive-demand)
   - [Optimizing Fleet Redistribution with Advanced Algorithms](#optimizing-fleet-redistribution-with-advanced-algorithms)
   - [Enhancing Customer Experience Through Intelligent Agents](#enhancing-customer-experience-through-intelligent-agents)
+- [📹 Semi-Finalist Presentation Video](#-semi-finalist-presentation-video)
 - [Meet the Nimrods](#meet-the-nimrods)
 - [Requirements](#requirements)
   - [Functional and non-functional requirements](/docs/requirements.md)
@@ -61,6 +62,14 @@ Even with accurate demand predictions, MobilityCorp must physically move vehicle
 The third dimension of our solution addresses customer engagement through agentic AI workflows built on the Pydantic AI framework. We implement two specialized agents: an agentic dispatch system that intelligently manages vehicle assignments and operations, and a travel copilot that helps customers plan multi-modal journeys integrating MobilityCorp vehicles with other transportation options. The dispatch agent autonomously handles complex decision making around vehicle assignments, maintenance scheduling, and exception handling, reducing manual operations overhead while improving response times. The travel agent provides personalized journey planning, suggesting optimal combinations of scooters, bikes, cars, and public transit based on trip requirements, weather, and real-time availability. These AI agents transform customer interactions from transactional bookings into assisted mobility experiences, building the daily usage habits that drive long-term customer value. Together with the predictive demand and optimization systems, these agents complete an architecture that doesn't just solve today's operational problems but positions MobilityCorp as an intelligent mobility platform capable of competing in tomorrow's urban transportation landscape.
 
 This AI-enabled architecture represents a fundamental shift from reactive operations to predictive intelligence. By combining machine learning forecasting, mathematical optimization, and autonomous agents within a robust data platform, MobilityCorp can systematically address the root causes of customer dissatisfaction while building sustainable competitive advantages in operational efficiency and user experience.
+
+## 📹 Semi-Finalist Presentation Video
+
+Click below to watch our team walk through the complete MobilityCorp AI-enabled architecture solution in our semi-finals presentation video:
+
+[![Watch the video](https://img.youtube.com/vi/UtDzBRmExuM/maxresdefault.jpg)](https://youtu.be/UtDzBRmExuM)
+
+Or copy and paste the following link in your browser: https://youtu.be/UtDzBRmExuM
 
 ## Meet the Nimrods
 
